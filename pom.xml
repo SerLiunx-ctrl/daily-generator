@@ -108,6 +108,18 @@
                                         <include name="logback.xml"/>
                                     </fileset>
                                 </copy>
+
+                                <copy todir="${project.build.directory}/output" flatten="true">
+                                    <fileset dir="">
+                                        <include name="README.md"/>
+                                    </fileset>
+                                </copy>
+
+                                <copy todir="${project.build.directory}/output" flatten="true">
+                                    <fileset dir="">
+                                        <include name="LICENSE"/>
+                                    </fileset>
+                                </copy>
                             </target>
                         </configuration>
                     </execution>
